@@ -1,0 +1,311 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #first-page{
+      background-image: url("images/bg-hero-desktop.svg");
+      background-size: cover;
+      height:600px;
+      background-color: #EDFBFE;
+      width:100%;
+    }
+    body{
+      padding:0;
+      margin: 0;
+      width:100%;
+    }
+    button{
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.24) , 0 17px 20px 0 rgba(0,0,0,0.19);
+    }
+    button:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2) , 0 6px 20px 0 rgba(0,0,0,0.19);;
+    }
+    button:active{
+        transform: translateY(4px);
+    }
+    #free{
+      background-color: white;
+      border: 1px solid whitesmoke;
+      border-radius: 30px;
+      width: 200px;
+      height: 50px;
+      color:darkcyan;
+    }
+    #right-section img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    #header{
+      display: flex;
+      justify-content: space-between;
+      padding : 50px;
+    }
+    #header img{
+        height: 40px;
+        width: 250px;
+    }
+    #sections{
+      display: flex;
+      height: 400px;
+    }
+    #right-section{
+      width: 50%;
+      height: 100%;
+      padding: 50px;
+    }
+    #left-section{
+      width: 50%;
+      height: 100%;
+      padding: 50px;
+      margin: auto;
+    }
+    #left-section button{
+        background-color: #FE52C0;
+        width:300px;
+        border: none;
+        border-radius: 11px;
+        padding:6px;
+        margin:auto;
+        height: 50px;
+        color: #FFEEFF;
+    }
+    #left-section p{
+        padding-bottom: 20px;
+    }
+    #pans{
+      background-color: whitesmoke;
+      color:dimgray;
+      display:grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap:50px;
+      height: 1400px;
+      padding: 100px;
+    }
+    .pan{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      height:400px;
+      width: 100%;
+    }
+    .pan img{
+      width:100%;
+      height: auto;
+    }
+    #last-page{
+      height:570px;
+      background-color: #00252E;
+      color:#FFFFFD;
+    }
+    footer{
+      background-color: #00252E;
+      color:#FFFFFD;
+      padding: 0;
+      margin: 0;
+      height:30px;
+    }
+    p{
+      padding: 0;
+      margin: 0;
+    }
+    #back{
+      background-color: whitesmoke;
+      color:#00252E;
+      height: 150px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    #back h1{
+      padding: 0;
+      margin: 0;
+    }
+    #card{
+      border: 5px solid rgb(242, 228, 228);
+      border-radius: 11px;
+      width:500px;
+      height: 100px;
+      position: absolute;
+      top: 40px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    #card button{
+      background-color: #FE52C0;
+      color: #FFEEFF;
+      border:none;
+      border-radius: 11px;
+      width: 250px;
+      height: 80px;
+    }
+    #cards{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      padding:50px;
+    }
+    ul{
+      list-style-type: none;
+    }
+    li{
+        padding: 5px;
+    }
+    li:hover{
+        text-decoration: underline;
+    }
+    #icons{
+        height:100px;
+    }
+    @media screen and (max-width: 600px)
+    {
+        body{
+            padding:0;
+            margin: 0;
+            width: fit-content;
+        }
+        #first-page{
+            height:1000px;
+        }
+        #header img{
+            width: 50px;
+            height: 40px;
+        }
+        #free{
+            border-radius: 11px;
+            width: 100px;
+            height: 40px;
+            padding:5px;
+        }
+        #sections{
+            flex-wrap: wrap;
+        }
+        #right-section img{
+            display:block;
+          }
+          #header{
+            display: flex;
+            justify-content: space-between;
+            padding : 50px;
+          }
+          #header img{
+              height: 40px;
+              width: 250px;
+          }
+          #sections{
+            display: flex;
+            height: 400px;
+          }
+          #right-section{
+            padding: 50px;
+            margin: auto;
+            height: 300px;
+          }
+          #left-section{
+            width: 50%;
+            padding: 50px;
+            margin: auto;
+          }
+          #left-section button{
+              background-color: #FE52C0;
+              width:300px;
+              border: none;
+              border-radius: 11px;
+              padding:6px;
+              margin:auto;
+              height: 50px;
+              color: #FFEEFF;
+          }
+          #left-section p{
+              padding-bottom: 20px;
+          }
+          #pans{
+            background-color: whitesmoke;
+            color:dimgray;
+            display:grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap:50px;
+            height: 1400px;
+            padding: 100px;
+          }
+          .pan{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            height:400px;
+            width: 100%;
+          }
+          .pan img{
+            width:100%;
+            height: auto;
+          }
+          #last-page{
+            height:570px;
+            background-color: #00252E;
+            color:#FFFFFD;
+          }
+          footer{
+            background-color: #00252E;
+            color:#FFFFFD;
+            padding: 0;
+            margin: 0;
+            height:30px;
+          }
+          p{
+            padding: 0;
+            margin: 0;
+          }
+          #back{
+            background-color: whitesmoke;
+            color:#00252E;
+            height: 150px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+          }
+          #back h1{
+            padding: 0;
+            margin: 0;
+          }
+          #card{
+            border: 5px solid rgb(242, 228, 228);
+            border-radius: 11px;
+            width:220px;
+            height: 70px;
+            position: absolute;
+            top: 40px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+          }
+          #card h2{
+            font-size: smaller;
+          }
+          #card button{
+            background-color: #FE52C0;
+            color: #FFEEFF;
+            border:none;
+            border-radius: 11px;
+            width: 120px;
+            height: 80px;
+            font-size: x-small;
+          }
+          #cards{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding:50px;
+          }
+          li:hover{
+              text-decoration: underline;
+          }
+
+
+
+    }
